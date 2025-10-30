@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Hotels>
   <Hotel>
-    <Name></Name>
-    <Phone></Phone>
+    <!-- WRONG ORDER on purpose (Name before Phone) -->
+    <Name>Bad Order Hotel</Name>
+    <Phone>480-000-0000</Phone>
+    <!-- Missing REQUIRED Address@NearestAirport attribute on purpose -->
     <Address>
-      <Number/>
-      <Street/>
-      <City/>
-      <State/>
-      <Zip/>
+      <Number>0</Number>
+      <Street>Nowhere</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>00000</Zip>
     </Address>
   </Hotel>
 </Hotels>
