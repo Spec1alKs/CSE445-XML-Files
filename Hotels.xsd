@@ -23,7 +23,7 @@
                 </xsd:complexType>
               </xsd:element>
             </xsd:sequence>
-            <!-- Rating as ATTRIBUTE (optional is fine) -->
+            <!-- Rating as ATTRIBUTE (optional) -->
             <xsd:attribute name="Rating" type="xsd:string" use="optional"/>
           </xsd:complexType>
         </xsd:element>
@@ -31,4 +31,6 @@
     </xsd:complexType>
   </xsd:element>
 </xsd:schema>
+
+
 
