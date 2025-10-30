@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hotels>
+  <Hotel>
+    <Name></Name>
+    <Phone></Phone>
+    <Address>
+      <Number/>
+      <Street/>
+      <City/>
+      <State/>
+      <Zip/>
+    </Address>
+  </Hotel>
+</Hotels>

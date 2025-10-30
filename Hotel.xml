@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hotels>
+  <Hotel>
+    <Name>ASU Inn</Name>
+    <Phone>480-555-1234</Phone>
+    <Phone>480-555-5678</Phone>
+    <Address>
+      <Number>100</Number>
+      <Street>College Ave</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>PHX</NearestAirport>
+    </Address>
+    <Rating>4.2</Rating>
+  </Hotel>
+</Hotels>
