@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xsd:element name="Hotels">
     <xsd:complexType>
       <xsd:sequence>
         <xsd:element name="Hotel" maxOccurs="unbounded">
           <xsd:complexType>
             <xsd:sequence>
+              <!-- ORDER MATTERS: Phone(s) first, then Name, then Address -->
+              <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
               <xsd:element name="Name" type="xsd:string"/>
-              <xsd:element name="Phone" type="xsd:string" maxOccurs="unbounded"/>
               <xsd:element name="Address">
                 <xsd:complexType>
                   <xsd:sequence>
@@ -16,15 +17,18 @@
                     <xsd:element name="City" type="xsd:string"/>
                     <xsd:element name="State" type="xsd:string"/>
                     <xsd:element name="Zip" type="xsd:string"/>
-                    <xsd:element name="NearestAirport" type="xsd:string" minOccurs="0"/>
                   </xsd:sequence>
+                  <!-- REQUIRED attribute -->
+                  <xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
                 </xsd:complexType>
               </xsd:element>
-              <xsd:element name="Rating" type="xsd:string" minOccurs="0"/>
             </xsd:sequence>
+            <!-- Rating as ATTRIBUTE (optional is fine) -->
+            <xsd:attribute name="Rating" type="xsd:string" use="optional"/>
           </xsd:complexType>
         </xsd:element>
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
 </xsd:schema>
+
